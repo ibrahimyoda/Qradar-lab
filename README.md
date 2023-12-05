@@ -39,10 +39,11 @@ First issue arised after running ./setup script. Qradar failed insatlling.After 
 <br />
 <br />
 <br/>
-<img width="405" alt="personnalization code entered" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/aa329c7a-c207-4762-ab6f-0bd7fb83a1c6"/>
+<img width="1271" alt="7 qradar dashboard" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/167c3d5c-5dbb-4d27-a0e9-e0f81e37cb27">
 <br />
 <br />
-<br/>
+Setting up logs forwarding from kali linux 192.168.1.67 to Qradar 192.168.1.18.Rsyslog waas not installed so we had to do that fisrt running these commands 
+sudo apt-get update & sudo apt-get -y install rsyslog and then edit /etc/rsyslog.conf to add the Qradar server ip address 192.168.1.18 </br>
 <img width="404" alt="qualys virtual scanner IP" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/70a6def4-a272-4a2a-99a4-8f8c091a7d39"/>
 <br />
 <br />
