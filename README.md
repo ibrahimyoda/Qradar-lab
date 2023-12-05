@@ -42,16 +42,16 @@ First issue arised after running ./setup script. Qradar failed insatlling.After 
 <img width="1271" alt="7 qradar dashboard" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/167c3d5c-5dbb-4d27-a0e9-e0f81e37cb27">
 <br />
 <br />
-Setting up logs forwarding from kali linux 192.168.1.67 to Qradar 192.168.1.18.Rsyslog waas not installed so we had to do that fisrt running these commands 
-sudo apt-get update & sudo apt-get -y install rsyslog and then edit /etc/rsyslog.conf to add the Qradar server ip address 192.168.1.18 to send all the kali linux logs.After resatrting teh rsyslog service with the next command service rsyslog restart the logs should have started being sent to qradar and it wasn't the case.I've investaigated the issue ans found out that qradar community edition had a license issue that neede to be troubleshoot with a command provided by ibm.I had to ssh into the qradar box and past the command and wait 5 min. before all this i also had to troubleshoot my ssh connection because it was failing and i needed to reset the password for it to work again so its really important to mention it. unfortunately logs transfer was still failing and i had to manually add the linux client to the Qradar platform log sources before seing some success. </br>
+Setting up logs forwarding from kali linux 192.168.1.67 to Qradar 192.168.1.18.Rsyslog was not installed so we had to do that first running these commands 
+sudo apt-get update & sudo apt-get -y install rsyslog and then edit /etc/rsyslog.conf to add the Qradar server ip address 192.168.1.18 to send all the kali linux logs.After restarting the rsyslog service with the next command service rsyslog restart the logs should have started being sent to qradar and it wasn't the case.I've investaigated the issue ans found out that qradar community edition had a license issue that neede to be troubleshoot with a command provided by ibm.I had to ssh into the qradar box then run the command and wait 5 minutes but before all this i also had to troubleshoot my ssh connection because it was failing and i needed to reset the password for it to work again so its really important to mention it. Unfortunately logs transfer was still failing and i had to manually add the linux client to the Qradar platform log sources before seing some success. </br>
 <img width="288" alt="rsyslog conf file" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/f0a6698a-30fb-41ce-8fef-da23da6c1744">
 <br />
 <br />
 <img width="912" alt="log sources" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/a3e0e371-7b3a-4d70-8af3-0f8b1684da56">
 <br />
 <br />
-Qualys virtual scanner in virtualbox : <br/>
-<img width="635" alt="redhat virtual scanner and windows box" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/898f656e-d624-4640-a3d9-4806e1095959"/>
+Qradar log activity : <br/>
+<img width="1262" alt="qradar-logs" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/99fcbbd3-21b9-4624-952c-60cad85f949d">
 <br/>
 <br/> 
 Virtual scanner appliance configuration in cloud platform: <br/>
