@@ -1,7 +1,7 @@
-<h1>Qradar siem installation and logs transfer</h1>
+<h1>Qradar siem installation and logs forwarding</h1>
 
 <h2>Description</h2>
-This lab consists of installing a Qradar siem in virtualbox and setting up logs transfer from kali linux and windows clients.
+This lab consists of installing a Qradar siem in virtualbox and setting up logs forwardingfrom kali linux and windows clients.
 <br />
 
 <h2>Environments Used </h2>
