@@ -47,7 +47,7 @@ sudo apt-get update & sudo apt-get -y install rsyslog and then edit /etc/rsyslog
 <img width="288" alt="rsyslog conf file" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/f0a6698a-30fb-41ce-8fef-da23da6c1744">
 <br />
 <br />
-<img width="1246" alt="appliance is ready" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/525cbe3a-4dd8-4bae-a9e8-e98cf7e2144d"/>
+<img width="912" alt="log sources" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/a3e0e371-7b3a-4d70-8af3-0f8b1684da56">
 <br />
 <br />
 Qualys virtual scanner in virtualbox : <br/>
