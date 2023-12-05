@@ -15,10 +15,11 @@ This lab consists of installing a Qradar siem in virtualbox and setting up logs 
 
 <p align="center">
 Downlaoding qradar ova file: <br/>
-<img width="411" alt="qualys login info" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/ae5ebf08-6609-4a35-a4ba-450ef96a133c"/>
+<img width="1251" alt="1 downlaod qradar ova file" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/364264c6-e2f3-4731-aa1e-eff546e8cbc6">
+
 <br />
 <br />
-Downloading qualys virtual scanner ova file:<br/>
+setting up CPU requirement:<br/>
 <img width="1156" alt="download qualys ova file" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/72ebc40a-9750-486b-b87d-ee585375fad4"/>
 <br />
 <br />
