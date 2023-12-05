@@ -30,8 +30,9 @@ Logging in and installing Qradar vm:</br>
 <img width="360" alt="5 login to root folder and setup " src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/047ed38b-27e3-4a34-a3bb-4f6d258e80b3">
 <br />
 <br/>
-<p>First issue arised after running ./setup script. Qradar failed insatlling.After inspecting the issue we found out it was the dhcp failing to attribute an ipv4 to the qradar box.We had to manually configure the qradar box ipv4 using th the network management text user interface (nmtui command) and set the ipv4 192.168.1.18 to the qradar box</p>
-<img width="395" alt="pinguins" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/3a3cc431-0ee2-4072-a579-0a9bd84a3492"/>
+First issue arised after running ./setup script. Qradar failed insatlling.After inspecting the issue we found out it was the dhcp failing to attribute an ipv4 to the qradar box.We had to manually configure the qradar box ipv4 using th the network management text user interface (nmtui command) and set the ipv4 192.168.1.18 to the qradar box </br>
+
+<img width="359" alt="ipv4 issue" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/e08d9f52-8198-4d7f-a186-5e20c87013a4">
 <br />
 <br/>
 <img width="405" alt="personnalization code" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/ce3b9d45-c25d-43f5-bf4f-c6ead67d4c85"/>
