@@ -35,7 +35,7 @@ First issue arised after running ./setup script. Qradar failed insatlling.After 
 <img width="359" alt="ipv4 issue" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/e08d9f52-8198-4d7f-a186-5e20c87013a4">
 <br />
 <br/>
-<img width="405" alt="personnalization code" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/ce3b9d45-c25d-43f5-bf4f-c6ead67d4c85"/>
+<img width="362" alt="static ip adrress 192 168 1 18" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/11ccebf8-cf8c-4599-b103-3b7a15b7540f">
 <br />
 <br />
 <br/>
