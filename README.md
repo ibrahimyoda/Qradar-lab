@@ -9,7 +9,7 @@ This lab consists of installing a Qradar siem in virtualbox and setting up logs 
 - <b>Windows 11 </b> 
 - <b>linux redhat</b>
 - <b>kali linux</b>
-- <b>Qradar platform(console)</b> 
+- <b>Qradar platform</b> 
 
 <h2>Lab walk-through:</h2>
 
