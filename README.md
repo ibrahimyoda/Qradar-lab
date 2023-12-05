@@ -22,13 +22,15 @@ setting up CPU requirement:<br/>
 <img width="1013" alt="2 changing cpu's to 4" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/ab92d376-09a3-4416-8629-21056ea06a7c">
 <br />
 <br />
-Virtual scanner installation and personalization: <br/>
-<img width="690" alt="importing the ova file 2" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/d8dcc7e7-da5c-4b04-bad9-950db8b4d9a6"/>
+Starting Qradar vm : <br/>
+<img width="499" alt="3starting qradar-vm" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/2a589716-6320-422f-ba81-a357bf10262e">
 <br />
 <br />
-<img <img width="578" alt="personalization code " src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/ff803d0e-35b7-456b-b53c-e737dc5edfe3"/>
+Logging in and installing Qradar vm:</br>
+<img width="360" alt="5 login to root folder and setup " src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/047ed38b-27e3-4a34-a3bb-4f6d258e80b3">
 <br />
 <br/>
+<p>First issue arised after running ./setup script. Qradar failed insatlling.After inspecting the issue we found out it was the dhcp failing to attribute an ipv4 to the qradar box.We had to manually configure the qradar box ipv4 using th the network management text user interface (nmtui command) and set the ipv4 192.168.1.18 to the qradar box</p>
 <img width="395" alt="pinguins" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/3a3cc431-0ee2-4072-a579-0a9bd84a3492"/>
 <br />
 <br/>
