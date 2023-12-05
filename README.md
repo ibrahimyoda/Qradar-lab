@@ -43,8 +43,8 @@ First issue arised after running ./setup script. Qradar failed insatlling.After 
 <br />
 <br />
 Setting up logs forwarding from kali linux 192.168.1.67 to Qradar 192.168.1.18.Rsyslog waas not installed so we had to do that fisrt running these commands 
-sudo apt-get update & sudo apt-get -y install rsyslog and then edit /etc/rsyslog.conf to add the Qradar server ip address 192.168.1.18 </br>
-<img width="404" alt="qualys virtual scanner IP" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/70a6def4-a272-4a2a-99a4-8f8c091a7d39"/>
+sudo apt-get update & sudo apt-get -y install rsyslog and then edit /etc/rsyslog.conf to add the Qradar server ip address 192.168.1.18 to send all the kali linux logs.After resatrting teh rsyslog service with the next command service rsyslog restart the logs should have started being sent to qradar and it wasn't the case.I've investaigated the issue ans found out that qradar community edition had a license issue that neede to be troubleshoot with a command provided by ibm.I had to ssh into the qradar box and past the command and wait 5 min. before all this i also had to troubleshoot my ssh connection because it was failing and i needed to reset the password for it to work again so its really important to mention it. unfortunately logs transfer was still failing and i had to manually add the linux client to the Qradar platform log sources before seing some success. </br>
+<img width="288" alt="rsyslog conf file" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/f0a6698a-30fb-41ce-8fef-da23da6c1744">
 <br />
 <br />
 <img width="1246" alt="appliance is ready" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/525cbe3a-4dd8-4bae-a9e8-e98cf7e2144d"/>
