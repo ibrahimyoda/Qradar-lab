@@ -31,14 +31,15 @@ Logging in and installing Qradar vm:</br>
 <br />
 <br/>
 First issue arised after running ./setup script. Qradar failed insatlling.After inspecting the issue we found out it was the dhcp failing to attribute an ipv4 to the qradar box.We had to manually configure the qradar box ipv4 using th the network management text user interface (nmtui command) and set the ipv4 192.168.1.18 to the qradar box </br>
-
+ip a command result : <br/>
 <img width="359" alt="ipv4 issue" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/e08d9f52-8198-4d7f-a186-5e20c87013a4">
 <br />
 <br/>
+setting up the static ip : <br/>
 <img width="362" alt="static ip adrress 192 168 1 18" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/11ccebf8-cf8c-4599-b103-3b7a15b7540f">
 <br />
 <br />
-<br/>
+Qradar dashboard : <br/>
 <img width="1271" alt="7 qradar dashboard" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/167c3d5c-5dbb-4d27-a0e9-e0f81e37cb27">
 <br />
 <br />
@@ -54,7 +55,7 @@ Qradar log activity : <br/>
 <img width="1262" alt="qradar-logs" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/99fcbbd3-21b9-4624-952c-60cad85f949d">
 <br/>
 <br/> 
-Virtual scanner appliance configuration in cloud platform: <br/>
+Setting up log forwarding from windows 11 host 192.168.1.19 to qradar sieem 192.168.1.18. We had to download IBM wincollect standalone aagent and configure it to ingest the logs.We encountered an issue after downlaoding the wincollect agent 10.1.8-17.The installation was failing Administrators who attempted to install WinCollect 10.1.4 or later can experience an issue where the installation cannot be completed due to a "WinCollect 10 Setup Wizard ended prematurely" error. This issue caused by a new virtual account feature added in WinCollect 10.1.4. To resolve this issue, we had to install the WinCollect update from the command line on as an administrator <br/>
 <img width="1130" alt="ip for scanning" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/ffde1eb4-a0b8-4fb9-877a-294824dbd810"/>
 <br />
 <br />
