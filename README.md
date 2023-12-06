@@ -49,13 +49,15 @@ Setting up logs forwarding from kali linux 192.168.1.67 to Qradar 192.168.1.18.R
 sudo apt-get update & sudo apt-get -y install rsyslog and then edit /etc/rsyslog.conf to add the Qradar server ip address 192.168.1.18 to send all the kali linux logs.After restarting the rsyslog service with the next command service rsyslog restart the logs should have started being sent to qradar and it wasn't the case.I've investaigated the issue ans found out that qradar community edition had a license issue that neede to be troubleshoot with a command provided by ibm.I had to ssh into the qradar box then run the command and wait 5 minutes but before all this i also had to troubleshoot my ssh connection because it was failing and i needed to reset the password for it to work again so its really important to mention it. Unfortunately logs transfer was still failing and i had to manually add the linux client to the Qradar platform log sources before seing some success. </br>
 <br />
 <br />
+Kali linux logs forwarding file configuration: <br/>
 <img width="288" alt="rsyslog conf file" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/f0a6698a-30fb-41ce-8fef-da23da6c1744">
 <br />
 <br />
+Kali linux logs source confirmed in qradar: <br/>
 <img width="912" alt="log sources" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/a3e0e371-7b3a-4d70-8af3-0f8b1684da56">
 <br />
 <br />
-Qradar log activity : <br/>
+Kali linux log activity in Qradar console : <br/>
 <img width="1262" alt="qradar-logs" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/99fcbbd3-21b9-4624-952c-60cad85f949d">
 <br/>
 <br/> 
@@ -64,9 +66,9 @@ Setting up log forwarding from windows 11 host 192.168.1.19 to qradar sieem 192.
 <br />
 Downloading Wincollect : <br/>
 <img width="890" alt="wincollect download" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/c9ce44b6-03ed-4726-b334-9bd7cc614a44">
+<br />
+<br />
 Wincollect installation error message: <br/>
-<br />
-<br />
 <img width="383" alt="wincollect installation-error-message" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/0e4566a5-292e-454b-8e10-b47d0d4dd8f9">
 <br />
 <br />
@@ -83,47 +85,8 @@ Windows events logs in qradar: <br/>
 <br />
 <br />
 Ibm wincollect console: <br/>
-<img width="635" alt="redhat virtual scanner and windows box" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/05487f86-1f5e-4aef-98e0-d4ccfa58a613"/>
-<br />
-<br />
-<img width="517" alt="install old version of firefox abd vlc on windows" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/a4437926-8f38-4602-9a13-e83bc51e327c"/>
-<br />
-<br />
-Setting up static ip address 192.168.1.17 on windows 10 box: <br/>
-<img width="514" alt="static ip setting " src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/f8193bde-cd95-4652-9409-afca3210812b"/>
-<br />
-<br />
-Turning off firewall on windows 10 box: <br/>
-<img width="509" alt="firewall off" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/a510c9bd-3109-4847-90d5-3b46228c8438"/>
-<br />
-<br />
-Running an unautheticated scan on the windows(Ip.addr = box 192.168.1.17): <br/>
-<img width="931" alt="qualys undcerdential scan" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/fd942568-3762-40d4-a510-60c1001acba4"/>
-<br />
-<br />
-Scan result: <br/>
-<img width="611" alt="scan result screenshot" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/405c18fd-632d-4f0f-b2bd-5ffaa0652d2f"/>
-<br />
-<br />
-Setting up remote access on windows box: <br/>
-<img width="516" alt="dword value set to 1 " src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/13721a4a-705d-437c-917e-3343dc13b234"/>
-<br />
-<br />
-Setting up authentication for windows 10 in qualys cloud plaform: <br/>
-<img width="754" alt="authentication info configuration" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/ef60ac86-dd86-46f5-b1eb-cbe2bc96c59f"/>
-<br />
-<br />
-<img width="908" alt="authentication display page" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/4e5b1eab-f3de-4824-a3cc-66af78169bcb"/>
-<br />
-<br />
-Authenticated scan: <br/>
-<img width="926" alt="scans result page" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/b85084e4-52d3-4597-96dd-c32127f84a96"/>
-<br />
-<br />
-Scan restult: <br/>
-<"/>
-<br />
-<br />
+<img width="1235" alt="ibm wincollect console" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/92dd8e55-2f77-4310-8936-5a85b88e0067">
+
 
 
 </p>
