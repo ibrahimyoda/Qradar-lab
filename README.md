@@ -31,6 +31,8 @@ Logging in and installing Qradar vm:</br>
 <br />
 <br/>
 First issue arised after running ./setup script. Qradar failed insatlling.After inspecting the issue we found out it was the dhcp failing to attribute an ipv4 to the qradar box.We had to manually configure the qradar box ipv4 using th the network management text user interface (nmtui command) and set the ipv4 192.168.1.18 to the qradar box </br>
+<br />
+<br />
 ip a command result : <br/>
 <img width="359" alt="ipv4 issue" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/e08d9f52-8198-4d7f-a186-5e20c87013a4">
 <br />
@@ -45,6 +47,8 @@ Qradar dashboard : <br/>
 <br />
 Setting up logs forwarding from kali linux 192.168.1.67 to Qradar 192.168.1.18.Rsyslog was not installed so we had to do that first running these commands 
 sudo apt-get update & sudo apt-get -y install rsyslog and then edit /etc/rsyslog.conf to add the Qradar server ip address 192.168.1.18 to send all the kali linux logs.After restarting the rsyslog service with the next command service rsyslog restart the logs should have started being sent to qradar and it wasn't the case.I've investaigated the issue ans found out that qradar community edition had a license issue that neede to be troubleshoot with a command provided by ibm.I had to ssh into the qradar box then run the command and wait 5 minutes but before all this i also had to troubleshoot my ssh connection because it was failing and i needed to reset the password for it to work again so its really important to mention it. Unfortunately logs transfer was still failing and i had to manually add the linux client to the Qradar platform log sources before seing some success. </br>
+<br />
+<br />
 <img width="288" alt="rsyslog conf file" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/f0a6698a-30fb-41ce-8fef-da23da6c1744">
 <br />
 <br />
@@ -56,10 +60,17 @@ Qradar log activity : <br/>
 <br/>
 <br/> 
 Setting up log forwarding from windows 11 host 192.168.1.19 to qradar sieem 192.168.1.18. We had to download IBM wincollect standalone aagent and configure it to ingest the logs.We encountered an issue after downlaoding the wincollect agent 10.1.8-17.The installation was failing Administrators who attempted to install WinCollect 10.1.4 or later can experience an issue where the installation cannot be completed due to a "WinCollect 10 Setup Wizard ended prematurely" error. This issue caused by a new virtual account feature added in WinCollect 10.1.4. To resolve this issue, we had to install the WinCollect update from the command line on as an administrator <br/>
+<br />
+<br />
+Downloading Wincollect : <br/>
+<img width="890" alt="wincollect download" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/c9ce44b6-03ed-4726-b334-9bd7cc614a44">
 Wincollect installation error message: <br/>
+<br />
+<br />
 <img width="383" alt="wincollect installation-error-message" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/0e4566a5-292e-454b-8e10-b47d0d4dd8f9">
 <br />
 <br />
+Troubleshooting Wincollect error message : <br/>
 <img width="1124" alt="assets added " src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/753ff578-faa7-4091-8208-cdb2af15a06b"/>
 <br />
 <br/>
