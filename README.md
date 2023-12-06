@@ -56,7 +56,8 @@ Qradar log activity : <br/>
 <br/>
 <br/> 
 Setting up log forwarding from windows 11 host 192.168.1.19 to qradar sieem 192.168.1.18. We had to download IBM wincollect standalone aagent and configure it to ingest the logs.We encountered an issue after downlaoding the wincollect agent 10.1.8-17.The installation was failing Administrators who attempted to install WinCollect 10.1.4 or later can experience an issue where the installation cannot be completed due to a "WinCollect 10 Setup Wizard ended prematurely" error. This issue caused by a new virtual account feature added in WinCollect 10.1.4. To resolve this issue, we had to install the WinCollect update from the command line on as an administrator <br/>
-<img width="1130" alt="ip for scanning" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/ffde1eb4-a0b8-4fb9-877a-294824dbd810"/>
+Wincollect installation error message: <br/>
+<img width="383" alt="wincollect installation-error-message" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/0e4566a5-292e-454b-8e10-b47d0d4dd8f9">
 <br />
 <br />
 <img width="1124" alt="assets added " src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/753ff578-faa7-4091-8208-cdb2af15a06b"/>
