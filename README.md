@@ -74,7 +74,8 @@ Troubleshooting Wincollect error message : <br/>
 <img width="865" alt="wincollect-fix" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/bb2a26b1-87d3-4ef3-b83d-7d4cadfdb807">
 <br />
 <br/>
-<img width="748" alt="option profile" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/c7efd33b-6942-4b7a-b45f-9ca192979475"/>
+Windows log source confirmed in qradar platform : <br/>
+<img width="756" alt="wincollect in log sources " src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/4fd4e1da-226f-4178-9ce6-a8736fbd878d">
 <br/>
 <br/>
 <img width="745" alt="box to be scanned" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/fd211e7b-8dba-4a2b-812b-f592c33ade67"/>
