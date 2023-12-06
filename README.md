@@ -71,7 +71,7 @@ Wincollect installation error message: <br/>
 <br />
 <br />
 Troubleshooting Wincollect error message : <br/>
-<img width="1124" alt="assets added " src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/753ff578-faa7-4091-8208-cdb2af15a06b"/>
+<img width="865" alt="wincollect-fix" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/bb2a26b1-87d3-4ef3-b83d-7d4cadfdb807">
 <br />
 <br/>
 <img width="748" alt="option profile" src="https://github.com/ibrahimyoda/Qualys-vulnerability-scanning-lab/assets/119984086/c7efd33b-6942-4b7a-b45f-9ca192979475"/>
