@@ -53,6 +53,12 @@ Kali linux logs forwarding file configuration: <br/>
 <img width="288" alt="rsyslog conf file" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/f0a6698a-30fb-41ce-8fef-da23da6c1744">
 <br />
 <br />
+command to update qradar license: <br/>
+```bash
+if [ -f /opt/qradar/ecs/license.txt ] ; then echo -n "QRadar:Q1 Labs Inc.:0007634bda1e2:WnT9X7BDFOgB1WaXwokODc:12/31/20" > /opt/qradar/ecs/license.txt ; fi ; if [ -f /opt/ibm/si/services/ecs-ec-ingress/current/eventgnosis/license.txt ] ; then echo -n "QRadar:Q1 Labs Inc.:0007634bda1e2:WnT9X7BDFOgB1WaXwokODc:12/31/20" > /opt/ibm/si/services/ecs-ec-ingress/current/eventgnosis/license.txt ; fi ; if [ -f /opt/ibm/si/services/ecs-ep/current/eventgnosis/license.txt ] ; then echo -n "QRadar:Q1 Labs Inc.:0007634bda1e2:WnT9X7BDFOgB1WaXwokODc:12/31/20" > /opt/ibm/si/services/ecs-ep/current/eventgnosis/license.txt ; fi ; if [ -f /opt/ibm/si/services/ecs-ec/current/eventgnosis/license.txt ] ; then echo -n "QRadar:Q1 Labs Inc.:0007634bda1e2:WnT9X7BDFOgB1WaXwokODc:12/31/20" > /opt/ibm/si/services/ecs-ec/current/eventgnosis/license.txt ; fi ; if [ -f /usr/eventgnosis/ecs/license.txt ] ; then echo -n "QRadar:Q1 Labs Inc.:0007634bda1e2:WnT9X7BDFOgB1WaXwokODc:12/31/20" > /usr/eventgnosis/ecs/license.txt ; fi ; if [ -f /opt/qradar/conf/templates/ecs_license.txt ] ; then echo -n "QRadar:Q1 Labs Inc.:0007634bda1e2:WnT9X7BDFOgB1WaXwokODc:12/31/20" > /opt/qradar/conf/templates/ecs_license.txt ; fi
+```
+<br />
+<br />
 Kali linux logs source confirmed in qradar: <br/>
 <img width="912" alt="log sources" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/a3e0e371-7b3a-4d70-8af3-0f8b1684da56">
 <br />
