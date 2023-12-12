@@ -67,7 +67,7 @@ Kali linux log activity in Qradar console : <br/>
 <img width="1262" alt="qradar-logs" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/99fcbbd3-21b9-4624-952c-60cad85f949d">
 <br/>
 <br/> 
-Setting up log forwarding from windows 11 host 192.168.1.19 to qradar sieem 192.168.1.18. We had to download IBM wincollect standalone aagent and configure it to ingest the logs.We encountered an issue after downlaoding the wincollect agent 10.1.8-17.The installation was failing Administrators who attempted to install WinCollect 10.1.4 or later can experience an issue where the installation cannot be completed due to a "WinCollect 10 Setup Wizard ended prematurely" error. This issue caused by a new virtual account feature added in WinCollect 10.1.4. To resolve this issue, we had to install the WinCollect update from the command line on as an administrator <br/>
+Setting up log forwarding from windows 11 host 192.168.1.19 to qradar sieem 192.168.1.18. We had to download IBM wincollect standalone aagent and configure it to ingest the logs.We encountered an issue after downlaoding the wincollect agent 10.1.8-17.The installation was failing Administrators who attempted to install WinCollect 10.1.4 or later can experience an issue where the installation cannot be completed due to a "WinCollect 10 Setup Wizard ended prematurely" error. This issue caused by a new virtual account feature added in WinCollect 10.1.4. To resolve this issue, we had to install the WinCollect update from the command line as an administrator <br/>
 <br />
 <br />
 Downloading Wincollect : <br/>
