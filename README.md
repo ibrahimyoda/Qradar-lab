@@ -1,7 +1,7 @@
 <h1>Qradar siem installation and logs forwarding</h1>
 
 <h2>Description</h2>
-This lab consists of installing a Qradar siem in virtualbox and setting up logs forwardingfrom kali linux and windows clients.
+This lab consists of installing a Qradar siem in virtualbox and setting up logs forwarding from kali linux and windows clients.
 <br />
 
 <h2>Environments Used </h2>
@@ -30,7 +30,7 @@ Logging in and installing Qradar vm:</br>
 <img width="360" alt="5 login to root folder and setup " src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/047ed38b-27e3-4a34-a3bb-4f6d258e80b3">
 <br />
 <br/>
-First issue arised after running ./setup script. Qradar failed insatlling.After inspecting the issue we found out it was the dhcp failing to attribute an ipv4 to the qradar box.We had to manually configure the qradar box ipv4 using th the network management text user interface (nmtui command) and set the ipv4 192.168.1.18 to the qradar box </br>
+the first issue arose when running ./setup script. Qradar failed to install.After inspecting the problem we found out it was the dhcp failing to attribute an ipv4 to the qradar box.We had to manually configure the qradar box ipv4 using the network management text user interface (nmtui command) and set the ipv4 192.168.1.18 to the qradar box </br>
 <br />
 <br />
 ip a command result : <br/>
@@ -45,8 +45,8 @@ Qradar dashboard : <br/>
 <img width="1271" alt="7 qradar dashboard" src="https://github.com/ibrahimyoda/Qradar-lab/assets/119984086/167c3d5c-5dbb-4d27-a0e9-e0f81e37cb27">
 <br />
 <br />
-Setting up logs forwarding from kali linux 192.168.1.67 to Qradar 192.168.1.18.Rsyslog was not installed so we had to do that first running these commands 
-sudo apt-get update & sudo apt-get -y install rsyslog and then edit /etc/rsyslog.conf to add the Qradar server ip address 192.168.1.18 to send all the kali linux logs.After restarting the rsyslog service with the next command service rsyslog restart the logs should have started being sent to qradar and it wasn't the case.I've investaigated the issue ans found out that qradar community edition had a license issue that neede to be troubleshoot with a command provided by ibm.I had to ssh into the qradar box then run the command and wait 5 minutes but before all this i also had to troubleshoot my ssh connection because it was failing and i needed to reset the password for it to work again so its really important to mention it. Unfortunately logs transfer was still failing and i had to manually add the linux client to the Qradar platform log sources before seing some success. </br>
+Setting up logs forwarding from kali linux 192.168.1.67 to Qradar 192.168.1.18.Rsyslog was not installed so we had to do it first running these commands 
+sudo apt-get update & sudo apt-get -y install rsyslog and then edit /etc/rsyslog.conf to add the Qradar server ip address 192.168.1.18 to send all the kali linux logs.After restarting the rsyslog service with the command service  rsyslog restart the logs should have started flowing to qradar and it wasn't the case.I've investiigated the issue and found out that qradar community edition had a license issue that needed to be troubleshoot with a command provided by ibm.I had to ssh into the qradar box then run the command and wait 5 minutes but before all this i also had to troubleshoot my ssh connection because it was failing and i needed to reset the password for it to work again so its really important to mention it. Unfortunately logs transfer was still failing and i had to manually add the linux client to the Qradar platform log sources before seing some success. </br>
 <br />
 <br />
 Kali linux logs forwarding file configuration: <br/>
